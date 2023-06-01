@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitly.Ws</title>
+    <link rel="stylesheet" href="Bitly.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Bitly<span>.ws</span></h2>
+        <p>
+          <span>url shortener | mirrors </span>
+          XYZ
+          <span>.</span>BITLY<span>.</span>
+          TINYURL
+        </p>
+      </nav>
+    </header>
+    <!-- start searchBar section -->
+    <section class="searchSection">
+      <div class="searchBar">
+        <input
+          type="search"
+          id="formInput"
+          placeholder="Paste a link to shorten it"
+          required
+        />
+        <button type="submit" onclick="shortenUrl()">Shorten</button>
+      </div>
+    </section>
+    <!-- End searchBar section -->
+    <!-- Start resultSection -->
+    <section class="resultSection">
+      <h4>Bitly.ws created shorten URL</h4>
+      <span>Your orginal URL:</span>
+      <p class="insertedUrl"></p>
+      <p id="insertedUrlLength"></p>
+      <h4 id="shortenUrl"></h4>
+      <div class="buttons-section">
+        <button>
+          <a href="" id="openUrl" target="_blank">Open in new window </a>
+        </button>
+        <button id="copyUrl">Copy to clipboard</button>
+      </div>
+    </section>
+    <!-- End resultSection -->
+
+    <div id="result"></div>
+    <script src="linkShortner.js"></script>
+  </body>
+</html>

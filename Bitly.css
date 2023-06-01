@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+/* start nav */
+
+nav {
+     background-color: #0E3042;
+     text-align: center;
+     height: 20vh;
+}
+
+nav h2 {
+     text-align: center;
+     color: white;
+     padding: 20px;
+     font-size: 35px;
+     font-family: 'Courgette', cursive;
+     letter-spacing: 2px;
+     font-weight: bold;
+     font-style: italic;
+}
+
+nav h2 span {
+     color: #FFD700;
+}
+
+nav p {
+     font-size: 15px !important;
+}
+
+nav p span:first-child {
+     color: #FFD700;
+     text-transform: capitalize;
+}
+
+nav p {
+     color: white;
+     margin-top: -15px;
+     padding-bottom: 8px;
+     text-transform: capitalize;
+}
+
+nav p:hover {
+     color: #FFD700;
+     cursor: pointer;
+}
+
+nav p span:nth-child(2),
+nav p span:nth-child(3) {
+     color: #FFD700;
+     font-size: 30px;
+}
+
+/* end nav */
+/* start searchBar section */
+.searchSection {
+     background-color: #377594;
+     height: 30vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.searchBar {
+     border: 6px solid #F6D600;
+     width: 60vw;
+     height: 10vh;
+     border-radius: 7px;
+     -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+     -ms-border-radius: 7px;
+     -o-border-radius: 7px;
+     display: flex;
+     background-color: white;
+     position: relative;
+}
+
+.searchBar input {
+     width: 100%;
+     height: 100%;
+     position: relative;
+     border: 1px solid orange;
+     outline: none;
+}
+
+.searchBar input::placeholder {
+     padding: 2px 5px;
+}
+
+.searchBar button {
+     position: absolute;
+     top: 2;
+     right: 0;
+     left: -5;
+     height: 80%;
+     width: 12%;
+     margin-left: -3px;
+     background-color: #F6D600;
+     border: 1px solid orange;
+     outline: none;
+     color: black;
+     font-size: 15px;
+     font-weight: 550;
+     margin: 6px 6px 2px 2px;
+     cursor: pointer;
+}
+
+.searchBar button:hover {
+     background-color: #FFEE38;
+     cursor: pointer;
+     border: none;
+}
+
+/* end searchBar section */
+/* start resultSection */
+.resultSection {
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     padding-top: 30px;
+     background-color: #EFF7FC;
+     padding-bottom: 23vh;
+}
+
+.resultSection h4 {
+     padding: 30px 10px 15px 30px;
+     font-size: 25px;
+     font-family: 'Roboto', sans-serif;
+     letter-spacing: 1px;
+}
+
+.resultSection span {
+     font-size: 18px;
+     font-family: 'Roboto', sans-serif;
+     padding: 25px;
+}
+
+.insertedUrl {
+     color: orange;
+     font-size: 20px;
+     font-style: italic;
+     padding: 5px;
+}
+
+.resultSection h4 {
+     padding-top: 10px;
+}
+
+.buttons-section {
+
+     height: 5vh;
+}
+
+.buttons-section button {
+     height: 100%;
+     width: 300px;
+     background-color: white;
+     color: orange;
+     border: 1px solid orange;
+     cursor: pointer;
+     font-weight: bold;
+}
+
+.buttons-section button:hover {
+     color: black;
+     border: 1px solid black;
+}
+
+#openUrl {
+     text-decoration: none;
+     color: orange !important;
+}
+
+#openUrl:hover {
+     color: black !important;
+}
+
+/* end resultSection */
